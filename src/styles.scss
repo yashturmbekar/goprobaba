@@ -2493,10 +2493,10 @@ Funfacts CSS
 .funfacts-area {
     position: relative;
     z-index: 1;
-    
+    padding-top: 50px;
+    width: 99%;
     background: {
         image: url(assets/img/funfacts-bg.jpg);
-        padding-left: 500px;
         position: center center;
         size: cover;
         repeat: no-repeat;
@@ -3292,7 +3292,6 @@ My Clients CSS
         .single-clients {
             a {
                 border: {
-                    bottom-width: 0;
                     left-width: 0;
                 };
             }
@@ -3302,7 +3301,6 @@ My Clients CSS
         .single-clients {
             a {
                 border: {
-                    bottom-width: 0;
                     left-width: 0;
                 };
             }
@@ -3312,7 +3310,6 @@ My Clients CSS
         .single-clients {
             a {
                 border: {
-                    bottom-width: 0;
                     left-width: 0;
                 };
             }
@@ -4897,6 +4894,10 @@ Instagram CSS
             font-size: 25px;
         }
     }
+}
+.instagram-slides {
+    padding-left: 15px;
+    padding-right: 15px;
 }
 .single-instagram-post {
     position: relative;
