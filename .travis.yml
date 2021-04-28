@@ -1,3 +1,24 @@
 language: node_js
 node_js:
-  - 7
+  - "stable"
+
+branches: 
+  only:
+    - develop
+
+addons: 
+  chrome: stable
+
+before_script:
+  - npm install @angular/cli
+  - npm install serverless
+  - serverless config credentials --provider aws --key ${{ secrets.AWS_ACCESS_KEY_123 }} --secrete ${{ secrets.AWS_SECRET_ACCESS_KEY123 }} --profile yash
+
+cache:
+  yarn: true
+  directories:
+    - node_modules
+
+script:
+  - ng build prod
+  - serverless deploy
