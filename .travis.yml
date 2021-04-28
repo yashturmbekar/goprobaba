@@ -9,16 +9,19 @@ branches:
 addons: 
   chrome: stable
 
+before_install:
+  - npm i -g npm@version-number 
+
 before_script:
   - npm install @angular/cli
   - npm install serverless
   - serverless config credentials --provider aws --key ${{ secrets.AWS_ACCESS_KEY_123 }} --secrete ${{ secrets.AWS_SECRET_ACCESS_KEY123 }} --profile yash
 
 cache:
-  yarn: true
+  npm: true
   directories:
     - node_modules
 
 script:
-  - ng build prod
+  - ng build -- prod
   - serverless deploy
