@@ -78,7 +78,7 @@
         "Ref": "ServerlessDeploymentBucket"
       },
       "Export": {
-        "Name": "sls-myWebsite-dev-ServerlessDeploymentBucketName"
+        "Name": "sls-myWebsite-prod-ServerlessDeploymentBucketName"
       }
     }
   }
