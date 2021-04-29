@@ -10,8 +10,8 @@ branches:
 addons: 
   chrome: stable
 
-before_install:
-  - npm i -g npm@version-number 
+# before_install:
+#   - npm i -g npm@version-number 
 
 before_script:
   - npm install @angular/cli
