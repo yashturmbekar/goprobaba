@@ -16,7 +16,7 @@ addons:
 before_script:
   - npm install @angular/cli
   - npm install serverless
-  - serverless config credentials --provider aws --key "$AWS_ACCESS_KEY_123" --secrete "$AWS_SECRET_ACCESS_KEY_123" --profile yash
+  - serverless config credentials --provider aws --key "$AWS_ACCESS_KEY_123" --secret "$AWS_SECRET_ACCESS_KEY_123" --profile yash
 
 cache:
   npm: true
