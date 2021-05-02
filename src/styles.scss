@@ -2166,7 +2166,6 @@ Services CSS
     background-color: transparent;
     transition: $transition;
     margin-bottom: 10px;
-
     &::after {
         content: '';
         position: absolute;
@@ -2626,7 +2625,6 @@ Works CSS
 =================================================*/
 .single-works-box {
     margin-bottom: 30px;
-    
     .works-image {
         overflow: hidden;
         border-radius: 5px;
@@ -2957,6 +2955,7 @@ Works Details CSS
     }
     .works-details-info {
         display: flex;
+        text-align: left;
         flex-wrap: wrap;
         margin: {
             right: -15px;
