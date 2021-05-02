@@ -290,7 +290,8 @@
                 <div class="blog-slides owl-carousel owl-theme">
                     <div class="single-blog-post">
                         <div class="post-image">
-                            <a (click) = 'gotoBlogPage("blog-4")'>
+                            <!-- <a (click) = 'gotoBlogPage("blog-4")'> -->
+                                <a routerLink="/works-details" [fragment]="'blog-4'">
                                 <img src="assets/img/backpacker-projects/b-1.jpg" alt="image">
                             </a>
                         </div>
@@ -301,12 +302,10 @@
                                 <li><a href="#">Monsoon</a></li>
                             </ul>
 
-                            <h3><a (click) = 'gotoBlogPage("blog-4")'>The Most Difficult trek to do in monsoon</a></h3>
-
+                            <h3><a routerLink="/works-details" [fragment]="'blog-4'">The Most Difficult trek to do in monsoon</a></h3>
                             <div class="post-meta">
                                 <ul>
-                                    <li><a (click) = 'gotoBlogPage("blog-4")'>Read More</a></li>
-
+                                    <li><a routerLink="/works-details" [fragment]="'blog-4'">Read More</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -383,6 +382,29 @@
                             </div>
                         </div>
                     </div>
+                    <div class="single-blog-post">
+                        <div class="post-image">
+                            <a routerLink="/works-details" [fragment]="'blog-5'">
+                                <img src="assets/img/backpacker-projects/1.jpg" alt="image">
+                            </a>
+                        </div>
+
+                        <div class="post-content">
+                            <ul class="post-tag">
+                                <li><a href="#">Star-trail</a></li>
+                                <li><a href="#">Long Expo</a></li>
+                            </ul>
+
+                            <h3><a routerLink="/works-details" href="#blog-5">How to do star-trail photoghaphy on gopro</a></h3>
+
+                            <div class="post-meta">
+                                <ul>
+                                    <li><a routerLink="/works-details" [fragment]="'blog-5'">Read More</a></li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -399,7 +421,7 @@
                             <div class="icon">
                                 <img src="assets/img/mountain-icon.png" alt="image">
                             </div>
-                            <h3>!!...कोकणकडा अन् तू</h3>
+                            <h3 routerLink = "/works-details"> !!...कोकणकडा अन् तू</h3>
                             <p>सह्याद्रीच्या प्रत्येक कड्यामध्ये आपणास ओढून घेण्याची शक्ती असते असे मला सारखे वाटत होते.. पण तसे सगळ्याच कड्यात नसे.... एखाद्या माणसाकडे आपण आपोआप ओढलं जातो तसेच तुझ्यात होते... मी तुझ्याकडे ओढला जात होतो</p>
                             <a routerLink="/services-details" class="read-more-btn">Read More</a>
                         </div>
