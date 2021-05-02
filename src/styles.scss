@@ -2160,6 +2160,7 @@ Services CSS
 }
 .single-services-box {
     position: relative;
+    text-align: left;
     z-index: 1;
     padding: 20px;
     background-color: transparent;
@@ -2352,11 +2353,16 @@ Services CSS
 /*================================================
 Services Details CSS
 =================================================*/
+.services-details-area {
+    text-align: left;
+    .a {
+        align-items: center;
+    }
+}
 .services-details-overview {
     display: flex;
     flex-wrap: wrap;
     color: $white-color;
-    text-align: left;
     margin: {
         right: -25px;
         left: -25px;
@@ -3515,6 +3521,7 @@ Projects CSS
     z-index: 1;
 }
 .single-projects-box {
+    text-align: left;
     margin-bottom: 30px;
     position: relative;
     z-index: 1;
@@ -3851,7 +3858,7 @@ Blog CSS
 .single-blog-post {
     margin-bottom: 30px;
     position: relative;
-
+    text-align: left;
     .post-image {
         border-radius: 10px;
 
