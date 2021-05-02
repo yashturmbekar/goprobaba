@@ -2160,12 +2160,12 @@ Services CSS
 }
 .single-services-box {
     position: relative;
+    text-align: left;
     z-index: 1;
     padding: 20px;
     background-color: transparent;
     transition: $transition;
     margin-bottom: 10px;
-
     &::after {
         content: '';
         position: absolute;
@@ -2352,11 +2352,16 @@ Services CSS
 /*================================================
 Services Details CSS
 =================================================*/
+.services-details-area {
+    text-align: left;
+    .a {
+        align-items: center;
+    }
+}
 .services-details-overview {
     display: flex;
     flex-wrap: wrap;
     color: $white-color;
-    text-align: left;
     margin: {
         right: -25px;
         left: -25px;
@@ -2620,7 +2625,6 @@ Works CSS
 =================================================*/
 .single-works-box {
     margin-bottom: 30px;
-    
     .works-image {
         overflow: hidden;
         border-radius: 5px;
@@ -2951,6 +2955,7 @@ Works Details CSS
     }
     .works-details-info {
         display: flex;
+        text-align: left;
         flex-wrap: wrap;
         margin: {
             right: -15px;
@@ -3515,6 +3520,7 @@ Projects CSS
     z-index: 1;
 }
 .single-projects-box {
+    text-align: left;
     margin-bottom: 30px;
     position: relative;
     z-index: 1;
@@ -3851,7 +3857,7 @@ Blog CSS
 .single-blog-post {
     margin-bottom: 30px;
     position: relative;
-
+    text-align: left;
     .post-image {
         border-radius: 10px;
 

@@ -290,7 +290,8 @@
                 <div class="blog-slides owl-carousel owl-theme">
                     <div class="single-blog-post">
                         <div class="post-image">
-                            <a (click) = 'gotoBlogPage("blog-4")'>
+                            <!-- <a (click) = 'gotoBlogPage("blog-4")'> -->
+                                <a routerLink="/works-details" [fragment]="'blog-4'">
                                 <img src="assets/img/backpacker-projects/b-1.jpg" alt="image">
                             </a>
                         </div>
@@ -301,12 +302,10 @@
                                 <li><a href="#">Monsoon</a></li>
                             </ul>
 
-                            <h3><a (click) = 'gotoBlogPage("blog-4")'>The Most Difficult trek to do in monsoon</a></h3>
-
+                            <h3><a routerLink="/works-details" [fragment]="'blog-4'">The Most Difficult trek to do in monsoon</a></h3>
                             <div class="post-meta">
                                 <ul>
-                                    <li><a (click) = 'gotoBlogPage("blog-4")'>Read More</a></li>
-
+                                    <li><a routerLink="/works-details" [fragment]="'blog-4'">Read More</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -381,6 +380,105 @@
 
                                 </ul>
                             </div>
+                        </div>
+                    </div>
+                    <div class="single-blog-post">
+                        <div class="post-image">
+                            <a routerLink="/works-details" [fragment]="'blog-5'">
+                                <img src="assets/img/backpacker-projects/1.jpg" alt="image">
+                            </a>
+                        </div>
+
+                        <div class="post-content">
+                            <ul class="post-tag">
+                                <li><a href="#">Star-trail</a></li>
+                                <li><a href="#">Long Expo</a></li>
+                            </ul>
+
+                            <h3><a routerLink="/works-details" href="#blog-5">How to do star-trail photoghaphy on gopro</a></h3>
+
+                            <div class="post-meta">
+                                <ul>
+                                    <li><a routerLink="/works-details" [fragment]="'blog-5'">Read More</a></li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="services" class="services-area pt-120 pb-90 bg-0f1d22">
+            <div class="container">
+                <div class="section-title">
+                    <span class="sub-title">मराठी लेखन काम</span>
+                    <h2>माझे शब्द </h2>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-4 col-sm-6 col-md-6">
+                        <div class="single-services-box">
+                            <div class="icon">
+                                <img src="assets/img/mountain-icon.png" alt="image">
+                            </div>
+                            <h3 routerLink = "/works-details"> !!...कोकणकडा अन् तू</h3>
+                            <p>सह्याद्रीच्या प्रत्येक कड्यामध्ये आपणास ओढून घेण्याची शक्ती असते असे मला सारखे वाटत होते.. पण तसे सगळ्याच कड्यात नसे.... एखाद्या माणसाकडे आपण आपोआप ओढलं जातो तसेच तुझ्यात होते... मी तुझ्याकडे ओढला जात होतो</p>
+                            <a routerLink="/services-details" class="read-more-btn">Read More</a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-sm-6 col-md-6">
+                        <div class="single-services-box">
+                            <div class="icon">
+                                <img src="assets/img/trekking-icon.png" alt="image">
+                            </div>
+                            <h3>!!...माझ्यातला मी</h3>
+                            <p>सह्याद्रीच्या कडेकपारीतून कोसळणाऱ्या अशा असंख्य धबधब्याचे तुषार तोंडावर झेलत या क्षणभंगुर आयुष्याचा मनस्वी आनंद घेणारा मी... हरिहरच्या पायऱ्यांच्या कातळरुपी सौंदर्यात मोहून जाणारा मी... कोयनेच्या काठावर आभाळाचे छत अन् चांदण्याची चादर</p>
+                            <a routerLink="/services-details" class="read-more-btn">Read More</a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-sm-6 col-md-6">
+                        <div class="single-services-box">
+                            <div class="icon">
+                                <img src="assets/img/moon-icon.png" alt="image">
+                            </div>
+                            <h3>!!...चंद्र, शुक्र अन् सुर्य</h3>
+                            <p>तुला माहितच आहे, खुल्या चांदण्याची माझी ओढ तशी जुनीच. कारण माझ्या किरणांसारखा तुझ्यात अहंकार नाही. गोंगाट नाही का तमरभाव नाही. तुझी किरणे जितकी प्रखर तितकीच सौम्य. अमावस्येला तुझ अस्तित्व न दर्शवण्याचा निरहंकार फक्त तुझ्यात</p>
+                            <a routerLink="/services-details" class="read-more-btn">Read More</a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-sm-6 col-md-6">
+                        <div class="single-services-box">
+                            <div class="icon">
+                                <img src="assets/img/war-icon.png" alt="image">
+                            </div>
+                            <h3>!!...वेडात मराठे वीर दौडले सात</h3>
+                            <p>खानास गर्दिस मिळवणे बिगर तोंड दाखवु नये.. राव खानास ऐसेच सोडलात.. तुम्हि सरदारको नाहि शिपाईगिरी केलीत..! ऐक तिखट आदेश नेसरीत थडकला..! खांद्यावर पद तर सरसेनापतीपदाचे.. हा कसला आदेश..? नको ते पद घ्या राजीनामा</p>
+                            <a routerLink="/services-details" class="read-more-btn">Read More</a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-sm-6 col-md-6">
+                        <div class="single-services-box">
+                            <div class="icon">
+                                <img src="assets/img/letter-icon.png" alt="image">
+                            </div>
+                            <h3>!!...महाराजांना खुले पत्र </h3>
+                            <p>राजे आज मुजरा करायला पण हात थरथरतोय. कारणे बरीच आहेत. तुम्ही ज्या स्वरज्याच स्वप्न बघितले अन् जे स्वराज्य उभारल्...आज त्याची अवस्था दननीय अवस्था झाली आहे. ज्या स्वरज्यात आठरापगड जातीचे लोक गुण्यागोविंदाने राहयचे</p>
+                            <a routerLink="/services-details" class="read-more-btn">Read More</a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-sm-6 col-md-6">
+                        <div class="single-services-box">
+                            <div class="icon">
+                                <img src="assets/img/love-icon.png" alt="image">
+                            </div>
+                            <h3>!!...राजगड अन तू</h3>
+                            <p>प्रिये, तुला तर माहीतच आहे मला फक्त दोनच प्रवास आवडतात, एक तुझ्या मिठीत येण्यापर्यंतचा अन् दुसरा म्हणजे सह्याद्रीच्या कुशीत लपलेल्या किल्लांवरचा... कारण दोन्ही प्रवासाच्या शेवटी मी खूपच खुश असतो... आजकालच्या प्रत्येक प्रवासात मी तुला शोधत</p>
+                            <a routerLink="/services-details" class="read-more-btn">Read More</a>
                         </div>
                     </div>
                 </div>
