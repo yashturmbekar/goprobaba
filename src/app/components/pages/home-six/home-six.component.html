@@ -290,8 +290,7 @@
                 <div class="blog-slides owl-carousel owl-theme">
                     <div class="single-blog-post">
                         <div class="post-image">
-                            <!-- <a (click) = 'gotoBlogPage("blog-4")'> -->
-                                <a routerLink="/works-details" [fragment]="'blog-4'">
+                                <a [routerLink]="['/works-details','blog-4']">
                                 <img src="assets/img/backpacker-projects/b-1.jpg" alt="image">
                             </a>
                         </div>
@@ -301,7 +300,6 @@
                                 <li><a href="#">Trek</a></li>
                                 <li><a href="#">Monsoon</a></li>
                             </ul>
-
                             <h3><a routerLink="/works-details" [fragment]="'blog-4'">The Most Difficult trek to do in monsoon</a></h3>
                             <div class="post-meta">
                                 <ul>
@@ -310,7 +308,46 @@
                             </div>
                         </div>
                     </div>
+                    <div class="single-blog-post">
+                        <div class="post-image">
+                                <a [routerLink]="['/works-details','blog-4']">
+                                <img src="assets/img/backpacker-projects/3.jpg" alt="image">
+                            </a>
+                        </div>
 
+                        <div class="post-content">
+                            <ul class="post-tag">
+                                <li><a href="#">GoPro</a></li>
+                                <li><a href="#">Long Expo</a></li>
+                            </ul>
+                            <h3><a routerLink="/works-details" [fragment]="'blog-4'">How to do steelwool photoghaphy on gopro</a></h3>
+                            <div class="post-meta">
+                                <ul>
+                                    <li><a routerLink="/works-details" [fragment]="'blog-4'">Read More</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single-blog-post">
+                        <div class="post-image">
+                                <a [routerLink]="['/works-details','blog-4']">
+                                <img src="assets/img/backpacker-projects/1.jpg" alt="image">
+                            </a>
+                        </div>
+
+                        <div class="post-content">
+                            <ul class="post-tag">
+                                <li><a href="#">GoPro</a></li>
+                                <li><a href="#">Long Expo</a></li>
+                            </ul>
+                            <h3><a routerLink="/works-details" [fragment]="'blog-4'">How to do star-trail photoghaphy on gopro</a></h3>
+                            <div class="post-meta">
+                                <ul>
+                                    <li><a routerLink="/works-details" [fragment]="'blog-4'">Read More</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                     <div class="single-blog-post">
                         <div class="post-image">
                             <a routerLink="/works-details" [fragment]="'blog-3'">
@@ -353,54 +390,6 @@
                             <div class="post-meta">
                                 <ul>
                                     <li><a routerLink="/works-details" [fragment]="'blog-1'">Read More</a></li>
-
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="single-blog-post">
-                        <div class="post-image">
-                            <a routerLink="/works-details" [fragment]="'blog-2'">
-                                <img src="assets/img/backpacker-projects/3.jpg" alt="image">
-                            </a>
-                        </div>
-
-                        <div class="post-content">
-                            <ul class="post-tag">
-                                <li><a href="#">Gopro</a></li>
-                                <li><a href="#">Long Expo</a></li>
-                            </ul>
-
-                            <h3><a routerLink="/works-details" href="#blog-2">How to do steelwool photoghaphy on gopro</a></h3>
-
-                            <div class="post-meta">
-                                <ul>
-                                    <li><a routerLink="/works-details" [fragment]="'blog-2'">Read More</a></li>
-
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="single-blog-post">
-                        <div class="post-image">
-                            <a routerLink="/works-details" [fragment]="'blog-5'">
-                                <img src="assets/img/backpacker-projects/1.jpg" alt="image">
-                            </a>
-                        </div>
-
-                        <div class="post-content">
-                            <ul class="post-tag">
-                                <li><a href="#">Star-trail</a></li>
-                                <li><a href="#">Long Expo</a></li>
-                            </ul>
-
-                            <h3><a routerLink="/works-details" href="#blog-5">How to do star-trail photoghaphy on gopro</a></h3>
-
-                            <div class="post-meta">
-                                <ul>
-                                    <li><a routerLink="/works-details" [fragment]="'blog-5'">Read More</a></li>
-
                                 </ul>
                             </div>
                         </div>

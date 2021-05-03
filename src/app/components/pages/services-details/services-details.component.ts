@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import {Location} from '@angular/common';
 @Component({
   selector: 'app-services-details',
@@ -16,11 +16,8 @@ export class ServicesDetailsComponent implements OnInit {
   }
   
   buttonBack(){
-    console.log("1");
-
      this.location.back();
-     this.router.navigate(['']);
-     
+     this.router.navigate(['']);   
   }
 
 }
