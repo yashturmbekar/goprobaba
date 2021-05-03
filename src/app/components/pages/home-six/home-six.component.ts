@@ -1,5 +1,7 @@
-import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { Component, OnInit, Inject } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
+import { DOCUMENT } from '@angular/common';
+import {WorksDetailsComponent} from 'src/app/components/pages/works-details/works-details.component'
 
 @Component({
   selector: 'app-home-six',
@@ -8,7 +10,7 @@ import { Router } from '@angular/router';
 })
 export class HomeSixComponent implements OnInit {
 
-  constructor(private router: Router) { }
+  constructor(private router: Router, @Inject(DOCUMENT) document) { }
   currentYear: number = new Date(). getFullYear();
   ngOnInit() {
   }
@@ -18,10 +20,15 @@ export class HomeSixComponent implements OnInit {
   }
 
   gotoBlogPage(id) {
+    console.log(id);
     this.router.navigate(['works-details']);
     console.log(id);
     let element = document.getElementById(id);
+    console.log(id);
     element.scrollIntoView();
   }
 
+  gotoBlogPage1() {
+    this.router.navigate(['works-details']);
+  }
 }
