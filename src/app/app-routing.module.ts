@@ -12,7 +12,7 @@ const routes: Routes = [
     {path: 'works-details', component: WorksDetailsComponent},
     {path: 'works-details/:id', component: WorksDetailsComponent},
     {path: 'blog-details', component: BlogDetailsComponent},
-    // {path: '**', component: HomeSixComponent}
+    {path: '**', component: HomeSixComponent}
 
 ];
 

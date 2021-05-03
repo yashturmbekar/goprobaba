@@ -2887,7 +2887,7 @@ Works Details CSS
       }
     img {
         transition: $transition;
-        opacity: 70%;
+        opacity: 80%;
     }
     a {
         position: absolute;
@@ -2903,7 +2903,7 @@ Works Details CSS
         text-align: center;
         color: $white-color;
         transition: $transition;
-        opacity: 1;
+        opacity: 100%;
         visibility: visible;
         margin-top: 20px;
 
@@ -2915,7 +2915,7 @@ Works Details CSS
     &:hover {
         a {
             margin-top: 0;
-            opacity: 0.5;
+            opacity: 50%;
             visibility: visible;
         }
         img {
