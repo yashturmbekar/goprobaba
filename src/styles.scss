@@ -2502,7 +2502,6 @@ Funfacts CSS
     position: relative;
     z-index: 1;
     padding-top: 50px;
-    width: 99%;
     background: {
         image: url(assets/img/funfacts-bg.jpg);
         position: center center;
@@ -2994,7 +2993,7 @@ Works Details CSS
 
                 li {
                     display: inline-block;
-                    margin-left: 8px;
+                    margin-right: 8px;
 
                     a {
                         color: $white-color;
@@ -4962,7 +4961,9 @@ Footer CSS
 }
 .footer-content {
     text-align: center;
-
+    .sub-title {
+        color: $white-color;
+    }
     .logo {
         margin-bottom: 30px;
 
