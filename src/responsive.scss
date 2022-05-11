@@ -49,6 +49,13 @@ $value_seven: 1550px;
             bottom: 30px;
         };
     }
+    .my-clients-area {
+        .row {
+            display: flex;
+            flex-wrap: wrap-reverse;
+        }
+    }
+
     .section-title {
         margin-bottom: 35px;
 
@@ -963,11 +970,15 @@ $value_seven: 1550px;
             font-size: 50px;
         }
     }
-
+.funfacts-area {
+    .row {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
     .single-funfacts {
         padding-right: 0;
         text-align: center;
-
         i {
             position: relative;
             top: 0;
@@ -2132,7 +2143,7 @@ $value_seven: 1550px;
 }
 
 @media only #{$media} and ($feature_min : $value_five) and ($feature_max : $value_six) {
-
+    
     body {
         font-size: 15px;
 
@@ -2356,6 +2367,10 @@ $value_seven: 1550px;
     }
 
     .services-area {
+        .row {
+            display: flex;
+            flex-wrap: wrap-reverse;
+        }
         .col-lg-4 {
             flex: 0 0 50%;
             max-width: 50%;
@@ -2563,7 +2578,6 @@ $value_seven: 1550px;
 }
 
 @media only #{$media} and ($feature_min : $value_seven) {
-
     body {
         .container {
             max-width: 1200px;

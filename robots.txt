@@ -1,0 +1,9 @@
+User-Agent: Googlebot
+Disallow: /nogooglebot/
+
+User-Agent: *
+Allow: /
+
+
+Sitemap: http://www.goprobaba.com/sitemap.xml
+Sitemap: https://www.goprobaba.com/sitemap.xml
