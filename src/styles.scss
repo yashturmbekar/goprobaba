@@ -952,7 +952,7 @@ Main Banner CSS
     }
     &.banner-bg6 {
         background: {
-            image: url(assets/img/main-banner6.jpg);
+            image: url(assets/img/main6.jpg);
         };
     }
     &.banner-bg7 {
@@ -967,12 +967,12 @@ Main Banner CSS
     }
     &.banner-bg9 {
         background: {
-            image: url(assets/img/main3.jpg);
+            image: url(assets/img/main9.jpg);
         };
     }
     &.banner-bg10 {
         background: {
-            image: url(assets/img/main-banner10.jpg);
+            image: url(assets/img/main10.jpg);
         };
     }
     &.banner-bg11 {
@@ -1684,8 +1684,8 @@ About CSS
     }
 }
 .about-list-tab-2 {
+    padding-top: 30px;
     background-color: $black-color;
-
     .tabs-list {
         background-color: #1b2d34;
         
@@ -1737,7 +1737,7 @@ About CSS
     .tab-content {
         .tabs-item {
             padding: {
-                top: 30px;
+                top: 15px;
                 bottom: 30px;
                 left: 30px;
                 right: 15px;
@@ -1919,7 +1919,11 @@ About CSS
                 }
             }
             .interview-area {
-                margin-bottom: -30px;
+                margin-bottom: 30px;
+
+                .padding1 {
+                    padding-bottom: 30px;
+                }
 
                 .single-interview-video {
                     position: relative;
@@ -2526,7 +2530,7 @@ Funfacts CSS
 
     i {
         position: absolute;
-        right: 0;
+        left: 0;
         top: -10px;
         font-size: 50px;
         color: $main-color;
